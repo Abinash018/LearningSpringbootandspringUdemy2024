@@ -13,12 +13,15 @@ public class Example1 {
         System.out.println("Vehicle Name from non spring context is : " + vehicle.getName());
 
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
-        Vehicle veh = context.getBean(Vehicle.class);
+        Vehicle veh = context.getBean("vehicle2",Vehicle.class);
+
+        // resolve for the no unique bean
+
         System.out.println("vehicle Name from  spring context is : " + veh.getName());
-        String hello = context.getBean(String.class);
-        System.out.println("String value from  spring context is : " + hello);
-        Integer num = context.getBean(Integer.class);
-        System.out.println("Integer value from  spring context is : " + num);
+//        String hello = context.getBean(String.class);
+//        System.out.println("String value from  spring context is : " + hello);
+//        Integer num = context.getBean(Integer.class);
+//        System.out.println("Integer value from  spring context is : " + num);
 
     }
 }

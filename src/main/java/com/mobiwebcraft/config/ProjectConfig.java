@@ -23,11 +23,28 @@ public class ProjectConfig {
     // type of the class mentioned
 
     @Bean
-    Vehicle  vehicle(){
+    Vehicle  vehicle1(){
          var vehicle = new Vehicle();
          vehicle.setName("Audi 8");
          return vehicle;
     }
+
+
+    @Bean
+    Vehicle  vehicle2(){
+        var vehicle = new Vehicle();
+        vehicle.setName("BMW");
+        return vehicle;
+    }
+
+
+    @Bean
+    Vehicle  vehicle3(){
+        var vehicle = new Vehicle();
+        vehicle.setName("honda");
+        return vehicle;
+    }
+
 
     @Bean
     String hello(){
