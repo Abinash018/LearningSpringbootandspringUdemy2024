@@ -3,8 +3,7 @@ package com.mobiwebcraft.config;
 import com.mobiwebcraft.beans.Vehicle;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-
+import org.springframework.context.annotation.Primary;
 
 
 // this annotation configuration will be automaticcally call by the ioc container at the beans cration tinme
@@ -33,12 +32,14 @@ public class ProjectConfig {
          return vehicle;
     }
 
-
+    @Primary
     @Bean
     Vehicle  vehicle2(){
         var vehicle = new Vehicle();
         vehicle.setName("BMW");
         return vehicle;
+
+        // here BMW is the default  name that will call
     }
 
 
