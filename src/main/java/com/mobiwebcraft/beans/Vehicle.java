@@ -6,6 +6,8 @@ public class Vehicle {
 
     public String getName() {
         return name;
+
+        // this is the getter that we are using
     }
 
     public void setName(String name) {
