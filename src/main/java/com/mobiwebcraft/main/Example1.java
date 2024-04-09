@@ -13,7 +13,7 @@ public class Example1 {
         System.out.println("Vehicle Name from non spring context is : " + vehicle.getName());
 
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
-        Vehicle veh = context.getBean("vehicle2",Vehicle.class);
+        Vehicle veh = context.getBean("audivehicle",Vehicle.class);
 
         // resolve for the no unique bean
 

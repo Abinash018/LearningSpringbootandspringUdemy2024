@@ -22,7 +22,11 @@ public class ProjectConfig {
     // it will got in the parameter so what happen accodingly as per the requirement basis it will call the proper fuinction accoding to the\
     // type of the class mentioned
 
-    @Bean
+    // example of the custom bean creation name
+    @Bean("audivehicle")
+    //other way is
+    //@Bean(value="audivehicle")
+    //@Bean(name="audivehicle")
     Vehicle  vehicle1(){
          var vehicle = new Vehicle();
          vehicle.setName("Audi 8");
