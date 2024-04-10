@@ -21,8 +21,10 @@ public class Vehicle {
     }
 
 
+
+
     public void printhello(){
 
-        System.out.println("printing from compononet vehicle bean");
+        System.out.println("printing hello from compononet vehicle bean");
     }
 }
