@@ -2,6 +2,7 @@ package com.mobiwebcraft.beans;
 
 // this is the pojo class where we will be define our requirement
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -19,6 +20,17 @@ public class Vehicle {
     public void setName(String name) {
         this.name = name;
     }
+
+    //  Auto wiring
+    //other class in to this class
+
+    //
+
+//    @Autowired
+//    public void setVehicle(Vehicle vehicle) {
+//        this.name = vehicle.getName();
+//    }
+
 
 
 
