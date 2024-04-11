@@ -20,7 +20,18 @@ import org.springframework.context.annotation.Primary;
 
 
 
-public class ProjectConfig {}
+public class ProjectConfig {
+
+
+
+
+}
+
+
+
+
+
+
 
 //    // due to the configuration what happen  it will look at the bean annoted tag , and it will look at the type of the annotation class
 //
@@ -49,7 +60,7 @@ public class ProjectConfig {}
 //    }
 //
 //
-//    @Bean
+//    @Bean("abibashbean")
 //    Vehicle  vehicle3(){
 //        var vehicle = new Vehicle();
 //        vehicle.setName("honda");
