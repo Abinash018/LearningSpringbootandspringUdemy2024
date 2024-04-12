@@ -1,10 +1,7 @@
 package com.mobiwebcraft.config;
 
 import com.mobiwebcraft.beans.Vehicle;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.*;
 
 
 // this annotation configuration will be automaticcally call by the ioc container at the beans cration tinme
@@ -15,12 +12,13 @@ import org.springframework.context.annotation.Primary;
 
 
 @Configuration
-@ComponentScan(basePackages ="com.mobiwebcraft.beans" ) //this is the pojo class componenet
-//the above is uded for the creation of the pojo class
-
-
-
+@ComponentScan(basePackages ="com.mobiwebcraft" )
+@EnableAspectJAutoProxy
 public class ProjectConfig {
+
+
+
+
 
 
 
@@ -39,6 +37,9 @@ public class ProjectConfig {
 //    // type of the class mentioned
 //
 //    // example of the custom bean creation name
+
+
+
 //    @Bean("audivehicle")
 //    //other way is
 //    //@Bean(value="audivehicle")

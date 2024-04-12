@@ -4,10 +4,18 @@ package com.mobiwebcraft.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
 // veicle pojo class
+
+
+// for the singal tone type of the solution we need to know
+@Scope(BeanDefinition.SCOPE_SINGLETON)
+@Lazy
 public class Vehicle {
 
     private String name;
@@ -60,8 +68,17 @@ public class Vehicle {
 
 
 
+     //bean scopoe in the
 
+     // singletone//
+    // prototype
 
+ //    related to the web application developmemnt time
+    //request
+    //session
+    //Application
+
+//this is a steri type of the annotatiion
 
 
 
